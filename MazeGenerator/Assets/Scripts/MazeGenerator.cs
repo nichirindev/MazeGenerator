@@ -11,12 +11,12 @@ public class MazeGenerator : MonoBehaviour
   [SerializeField]
   private GameObject structurePrefab;
   [SerializeField]
-  private int width = 10;
+  private int width = 30;
   [SerializeField]
-  private int height = 10;
+  private int height = 30;
   private MazeCell[,] mazeGrid;
   [SerializeField]
-  private int randomVariations = 10;
+  private int randomVariations = 100;
 
 void Start()
 {
