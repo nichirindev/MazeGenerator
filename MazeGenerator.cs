@@ -9,14 +9,12 @@ public class MazeGenerator : MonoBehaviour
   [SerializeField]
   private MazeCell cellPrefab;
   [SerializeField]
-  private GameObject structurePrefab;
+  private int width = 30;
   [SerializeField]
-  private int width = 10;
-  [SerializeField]
-  private int height = 10;
+  private int height = 30;
   private MazeCell[,] mazeGrid;
   [SerializeField]
-  private int randomVariations = 10;
+  private int randomVariations = 100;
 
 void Start()
 {
@@ -35,12 +33,6 @@ void Start()
     for (int index = 0; index < this.randomVariations; ++index)
       this.RandomVariation();
     this.transform.localScale = new Vector3(15f, 80f, 15f);
-    for (int index = 0; index < 3; ++index)
-    {
-      RaycastHit hitInfo;
-      if (Physics.Raycast(new Vector3((float) (UnityEngine.Random.Range(1, this.width - 1) * 15), 50f, (float) (UnityEngine.Random.Range(1, this.height - 1) * 15)), Vector3.down, out hitInfo, 100f))
-        Instantiate(this.structurePrefab, hitInfo.point, Quaternion.identity);
-    }
   }
 
   private void GenerateMaze(MazeCell prevCell, MazeCell curCell)
