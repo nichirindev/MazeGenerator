@@ -1,6 +1,8 @@
 # MazeGeneratorC#
 Maze Generator created in C# for Unity 3D games<br>
 <br>
+You can download it as a zip or clone this repo and use the Unity Project for your liking version Unity 2022.3.62f2 <DX11><br> The Project is inside MazeGenerator open that folder in unity, does work with newer versions<br>
+<br>
 <img width="752" height="485" alt="image" src="https://github.com/user-attachments/assets/51eb2cff-0d1b-4d5c-9e09-67a532984d55" />
 <img width="399" height="371" alt="image" src="https://github.com/user-attachments/assets/a02afd8a-4200-460c-b8b9-8583f9724577" /><br>
 <br>
